@@ -1,6 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    /* RHS Background: Midnight Blue to add depth and a tech-friendly feel */
+    background-color: #1A1A40; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,32 +10,77 @@ body {
 }
 
 .quiz-container {
-    background-color: white;
+    /* RHS Soft White for a clean layout and maximum readability */
+    background-color: #F5F5F5;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Deep Black shadow for contrast */
+    box-shadow: 0 8px 16px rgba(10, 10, 10, 0.4);
+    /* Metallic Gold accent border */
+    border: 3px solid #D4AF37;
     width: 100%;
     max-width: 500px;
     text-align: center;
+    /* RHS Deep Black text */
+    color: #0A0A0A;
+}
+
+h1 {
+    /* RHS Logo & Headers: Royal Purple */
+    color: #3B006A;
+    margin-bottom: 5px;
+}
+
+/* Dynamically injecting our slogan under the main header! */
+h1::after {
+    content: "Code. Create. Contribute.";
+    display: block;
+    font-size: 14px;
+    color: #D4AF37; /* RHS Metallic Gold */
+    margin-top: 5px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2E2E2E; /* Charcoal Gray for secondary headers */
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    /* RHS Suggested Button Color: Electric Blue for interactive tech elements */
+    background-color: #007BFF;
+    color: #F5F5F5; /* Soft White */
+    border: 2px solid transparent;
+    padding: 12px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     width: 80%;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    /* Hover State: Emerald Green representing 'success' and 'growth' */
+    background-color: #00C896; 
+    color: #0A0A0A; /* Deep Black for contrast on the green */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 200, 150, 0.4);
 }
 
 .hidden {
     display: none;
+}
+
+#result h2 {
+    color: #3B006A; /* Royal Purple to match the main header theme */
+}
+
+#score {
+    /* Highlighting the final score in Emerald Green */
+    color: #00C896; 
+    font-weight: bold;
+    font-size: 1.3em;
 }
